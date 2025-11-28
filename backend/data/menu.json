@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "price": 250,
+    "description": "Creamy tomato butter chicken curry",
+    "image": "butter-chicken.jpg",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Chicken Biryani",
+    "category": "Rice",
+    "price": 300,
+    "description": "Aromatic basmati rice with chicken",
+    "image": "biryani.jpg",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Butter Naan",
+    "category": "Bread",
+    "price": 80,
+    "description": "Soft tandoori butter naan",
+    "image": "naan.jpg",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Paneer Tikka",
+    "category": "Starters",
+    "price": 220,
+    "description": "Grilled marinated paneer cubes",
+    "image": "paneer-tikka.jpg",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Mango Lassi",
+    "category": "Drinks",
+    "price": 60,
+    "description": "Sweet mango yogurt drink",
+    "image": "lassi.jpg",
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Dal Makhani",
+    "category": "Main Course",
+    "price": 200,
+    "description": "Creamy black lentils slow cooked",
+    "image": "dal-makhani.jpg",
+    "available": true
+  }
+]

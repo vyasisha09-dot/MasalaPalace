@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "1764332831699",
+    "items": [
+      {
+        "name": "Butter Chicken",
+        "price": 250,
+        "quantity": 1
+      }
+    ],
+    "total": 250,
+    "customerName": "yash",
+    "phone": "7340604576",
+    "address": "sector-14",
+    "status": "Pending",
+    "date": "2025-11-28T12:27:11.699Z"
+  }
+]

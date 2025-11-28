@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Palace - Authentic Indian Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-utensils"></i> Masala Palace</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#cart" class="nav-link">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="#orders" class="nav-link">Orders</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Indian Flavors</h1>
+            <p>Experience the taste of India with our traditional recipes</p>
+            <button class="cta-btn" onclick="showSection('menu')">View Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Main Course">Main Course</button>
+            <button class="filter-btn" data-category="Rice">Rice</button>
+            <button class="filter-btn" data-category="Bread">Bread</button>
+            <button class="filter-btn" data-category="Starters">Starters</button>
+            <button class="filter-btn" data-category="Drinks">Drinks</button>
+        </div>
+        <div id="menu-items" class="menu-grid"></div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cart-total">0</span></h3>
+                <button id="checkout-btn" class="checkout-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Form Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Details</h2>
+            <form id="order-form">
+                <input type="text" id="customer-name" placeholder="Your Name" required>
+                <input type="tel" id="customer-phone" placeholder="Phone Number" required>
+                <textarea id="customer-address" placeholder="Delivery Address" required></textarea>
+                <button type="submit" class="submit-btn">Confirm Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Orders Section (Admin-like view) -->
+    <section id="orders" class="orders-section">
+        <h2>Your Orders</h2>
+        <div id="orders-list" class="orders-grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
